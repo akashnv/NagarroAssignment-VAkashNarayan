@@ -35,6 +35,10 @@ public class HomePage extends TestBase{
 	@AndroidFindBy(id = "android:id/button2")
 	MobileElement noBtn;
 	
+	@AndroidFindBy(id = "com.android.permissioncontroller:id/continue_button")
+	MobileElement continueBtn;
+	
+	
 	public WebDriverWait wait;
 	public AppiumDriver<MobileElement> driver;
 	
@@ -84,6 +88,7 @@ public class HomePage extends TestBase{
 	public MobileElement homeTitleElement() {
 		return title;
 	}
+	
 	
 	
 }

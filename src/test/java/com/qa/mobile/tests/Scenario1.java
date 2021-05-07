@@ -1,13 +1,26 @@
 package com.qa.mobile.tests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.pages.mobile.HomePage;
 
 public class Scenario1 extends TestBase {
-	HomePage home = new HomePage(driver);
+	HomePage home;
+
+	@BeforeTest
+	public void initialise() throws MalformedURLException {
+		System.out.println("Running scenario-1");
+		init();
+		home = new HomePage(driver);
+	}
+	
+	
 
 	@Test
 	public void userUerifiesTitle() {
@@ -22,5 +35,5 @@ public class Scenario1 extends TestBase {
 		Assert.assertEquals(home.getDisplayToast().isDisplayed(), true,"Verifying Toast Display");
 		Assert.assertEquals(home.getDisplayTestView().isDisplayed(), true,"Verifying Test View Display");
 	}
-
+	
 }
