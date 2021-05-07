@@ -1,11 +1,9 @@
 package com.qa.mobile.tests;
 
 import java.net.MalformedURLException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.qa.base.TestBase;
 import com.qa.pages.mobile.HomePage;
 

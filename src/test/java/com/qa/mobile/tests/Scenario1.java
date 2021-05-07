@@ -1,11 +1,9 @@
 package com.qa.mobile.tests;
 
 import java.net.MalformedURLException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.qa.base.TestBase;
 import com.qa.pages.mobile.HomePage;
 
@@ -18,11 +16,9 @@ public class Scenario1 extends TestBase {
 		init();
 		home = new HomePage(driver);
 	}
-	
-	
 
 	@Test
-	public void userUerifiesTitle() {
+	public void userVerifiesTitle() {
 		Assert.assertEquals(home.getTitle(), "selendroid-test-app", "Verifying Title");
 	}
 

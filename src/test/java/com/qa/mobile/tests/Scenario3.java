@@ -1,11 +1,9 @@
 package com.qa.mobile.tests;
 
 import java.net.MalformedURLException;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.qa.base.TestBase;
 import com.qa.pages.mobile.ChromeBrowserPage;
 
@@ -21,7 +19,7 @@ public class Scenario3 extends TestBase {
 	}
 
 	@Test
-	public void user_verifies_the_title() {
+	public void userVerifiesTheTitle() {
 		String name = "TestTest";
 		chromePage.tapChromeIconAndEnterDetails(name);
 		Assert.assertTrue((chromePage.getMyWayElement().isDisplayed()));

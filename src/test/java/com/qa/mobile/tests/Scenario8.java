@@ -1,7 +1,6 @@
 package com.qa.mobile.tests;
 
 import java.net.MalformedURLException;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -18,10 +17,12 @@ public class Scenario8 extends TestBase{
 	}
 	
 	@Test
-	public void clickOnExceptionBtnAndVerifyHomescreenTitle() {
+	public void clickOnExceptionBtnAndVerifyHomescreenTitle() throws MalformedURLException {
 		MobileElement eButton = driver.findElement(By.id("io.selendroid.testapp:id/exceptionTestButton"));
 		eButton.click();
-		MobileElement title = driver.findElement(By.id("android:id/title"));
+		driver.closeApp();
+		initialise();
+		MobileElement title = driver.findElement(By.id("android:id/title"));		
 		Assert.assertEquals(title.getText(), "selendroid-test-app");
 	}
 

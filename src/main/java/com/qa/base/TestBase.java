@@ -5,8 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
 
 import com.qa.util.PropertyLoader;
 
@@ -43,9 +42,9 @@ public class TestBase {
 
 	}
 
-	@AfterClass
+	@AfterTest
 	public void tearDown() {
 		driver.closeApp();
-		
+				
 	}
 }

@@ -1,6 +1,5 @@
 package com.qa.mobile.tests;
 import java.net.MalformedURLException;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -24,6 +23,7 @@ public class Scenario9 extends TestBase{
 		String text = "test";
 		MobileElement field = driver.findElement(By.id("io.selendroid.testapp:id/exceptionTestField"));
 		field.sendKeys(text);
+		driver.closeApp();
 		init();	
 		MobileElement title = driver.findElement(By.id("android:id/title"));
 		Assert.assertEquals(title.getText(), "selendroid-test-app");

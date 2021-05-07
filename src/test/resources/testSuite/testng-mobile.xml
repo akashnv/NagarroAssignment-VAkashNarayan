@@ -4,15 +4,14 @@
 	<test name="test">
 		<classes>
 			<class name="com.qa.mobile.tests.Scenario1" />
-			<!--<class name="com.qa.mobile.tests.Scenario2" />
-			 <class name="com.qa.mobile.tests.Scenario2" />
-			 <class name="com.qa.mobile.tests.Scenario3" />
+			<class name="com.qa.mobile.tests.Scenario2" />
+			<class name="com.qa.mobile.tests.Scenario3" />
 			<class name="com.qa.mobile.tests.Scenario4" />
 			<class name="com.qa.mobile.tests.Scenario5" />
 			<class name="com.qa.mobile.tests.Scenario6" />
 			<class name="com.qa.mobile.tests.Scenario7" />
 			<class name="com.qa.mobile.tests.Scenario8" />
-			<class name="com.qa.mobile.tests.Scenario9" />-->
+			<class name="com.qa.mobile.tests.Scenario9" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
