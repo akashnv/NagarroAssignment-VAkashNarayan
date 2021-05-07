@@ -3,21 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
   <test thread-count="5" name="test(failed)">
     <classes>
+      <class name="com.qa.mobile.tests.Scenario2">
+        <methods>
+          <include name="clickEN_BtnAndVerify"/>
+          <include name="tearDown"/>
+          <include name="initialise"/>
+        </methods>
+      </class> <!-- com.qa.mobile.tests.Scenario2 -->
       <class name="com.qa.mobile.tests.Scenario1">
         <methods>
-          <include name="closeApp"/>
           <include name="userVerifyElementsOnApplication"/>
+          <include name="tearDown"/>
           <include name="initialise"/>
           <include name="userUerifiesTitle"/>
         </methods>
       </class> <!-- com.qa.mobile.tests.Scenario1 -->
-      <class name="com.qa.mobile.tests.Scenario2">
-        <methods>
-          <include name="clickEN_BtnAndVerify"/>
-          <include name="closeApp"/>
-          <include name="initialise"/>
-        </methods>
-      </class> <!-- com.qa.mobile.tests.Scenario2 -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [suite] -->

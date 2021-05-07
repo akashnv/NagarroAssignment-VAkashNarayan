@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite_JQueryUI]">
+  <test thread-count="3" name="Test_JQueryUI_Selectable(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.web.tests.Test_JQueryUI_Selectable">
+        <methods>
+          <include name="openTest"/>
+          <include name="tearDown"/>
+          <include name="test2"/>
+          <include name="closeTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.web.tests.Test_JQueryUI_Selectable -->
+    </classes>
+  </test> <!-- Test_JQueryUI_Selectable(failed) -->
+  <test thread-count="3" name="Test_JQueryUI_ControlGroups(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.web.tests.Test_JQueryUI_ControlGroups">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="openTest"/>
+          <include name="closeTest"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.qa.web.tests.Test_JQueryUI_ControlGroups -->
+    </classes>
+  </test> <!-- Test_JQueryUI_ControlGroups(failed) -->
+</suite> <!-- Failed suite [TestSuite_JQueryUI] -->

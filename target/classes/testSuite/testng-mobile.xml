@@ -4,8 +4,8 @@
 	<test name="test">
 		<classes>
 			<class name="com.qa.mobile.tests.Scenario1" />
-			<class name="com.qa.mobile.tests.Scenario2" />
-			 <!--<class name="com.qa.mobile.tests.Scenario2" />
+			<!--<class name="com.qa.mobile.tests.Scenario2" />
+			 <class name="com.qa.mobile.tests.Scenario2" />
 			 <class name="com.qa.mobile.tests.Scenario3" />
 			<class name="com.qa.mobile.tests.Scenario4" />
 			<class name="com.qa.mobile.tests.Scenario5" />

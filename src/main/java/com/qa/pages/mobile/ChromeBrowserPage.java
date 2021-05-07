@@ -19,13 +19,13 @@ public class ChromeBrowserPage extends TestBase {
 	@AndroidFindBy(id = "io.selendroid.testapp:id/buttonStartWebview")
 	MobileElement btnChromeLogo;
 
-	@AndroidFindBy(id = "io.selendroid.testapp:id/tableHeader")
+	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[1]/android.widget.TextView")
 	MobileElement header;
 
 	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[3]/android.webkit.WebView/android.webkit.WebView/android.widget.TextView")
 	MobileElement hdrTxt;
 
-	@AndroidFindBy(id = "name_input")
+	@AndroidFindBy(xpath = "//*[contains(text(),'Enter your name')]")
 	MobileElement nameTxtBox;
 
 	@AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.TableLayout/android.widget.TableRow[3]"

@@ -45,7 +45,7 @@ public class TestBase {
 
 	@AfterClass
 	public void tearDown() {
-		driver.terminateApp("io.selendroid.testapp");
+		driver.closeApp();
 		
 	}
 }

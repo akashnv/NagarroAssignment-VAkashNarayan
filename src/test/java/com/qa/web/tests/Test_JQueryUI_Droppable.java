@@ -23,7 +23,7 @@ public class Test_JQueryUI_Droppable extends Test_Base {
 		selenium.setDriver(browser);
 		selenium.setPageLoadTimeout(60);
 		selenium.setImplicitWait(60);
-		extent = new ExtentManager(selenium.getFileName(".//src//test//resources//results//WebReport") + ".html", "JQueryUI_ExtentReports");
+		extent = new ExtentManager(selenium.getFileName(".//test-output//Results//WebReport") + ".html", "JQueryUI_ExtentReports");
 		extent.initializeExtentTest("Test JQueryUI Droppable feature", "Check droppable feature", "Test",
 				"Regression");
 

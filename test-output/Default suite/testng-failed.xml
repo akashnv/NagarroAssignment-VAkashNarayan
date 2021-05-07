@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.mobile.tests.Scenario1">
+      <class name="com.qa.mobile.tests.Scenario5">
         <methods>
-          <include name="init"/>
-          <include name="userVerifyElementsOnApplication"/>
-          <include name="tearDown"/>
+          <include name="clickOnProgressBarAndVerifyRegPageElements"/>
           <include name="initialise"/>
-          <include name="userUerifiesTitle"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.mobile.tests.Scenario1 -->
+      </class> <!-- com.qa.mobile.tests.Scenario5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

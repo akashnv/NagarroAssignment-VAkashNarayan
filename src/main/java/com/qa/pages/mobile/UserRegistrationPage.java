@@ -1,6 +1,7 @@
 package com.qa.pages.mobile;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -16,7 +17,7 @@ public class UserRegistrationPage extends TestBase {
 	@AndroidFindBy(id = "io.selendroid.testapp:id/startUserRegistration")
 	MobileElement fileIconBtn;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[contains(text(),'Welcome to register')]")
+	@AndroidFindBy(xpath ="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView[1]")
 	MobileElement welcomeLabel;
 	
 	@AndroidFindBy(id = "io.selendroid.testapp:id/inputUsername")
@@ -43,7 +44,7 @@ public class UserRegistrationPage extends TestBase {
 	@AndroidFindBy(id = "io.selendroid.testapp:id/label_username_data")
 	public MobileElement userNameField;
 	
-	@AndroidFindBy(id = "io.selendroid.testapp:id/input_preferedProgrammingLanguage")
+	@AndroidFindBy(id = "android:id/text1")
 	public MobileElement programmingLngDropdownValue;
 	
 	@AndroidFindBy(id = "io.selendroid.testapp:id/label_password_data")
@@ -80,10 +81,12 @@ public class UserRegistrationPage extends TestBase {
 	
 	public void clickFileLogo() {
 		Assert.assertEquals(fileIconBtn.isDisplayed(), true);		
+		wait.until(ExpectedConditions.visibilityOf(fileIconBtn));
 		fileIconBtn.click();
 	}
 	
 	public void verifyRegPageTitle() {
+		wait.until(ExpectedConditions.visibilityOf(welcomeLabel));
 		Assert.assertEquals(welcomeLabel.isDisplayed(), true);
 	}
 	
@@ -91,6 +94,7 @@ public class UserRegistrationPage extends TestBase {
 		userNameTxtBox.sendKeys(uname);
 		emailTxtBox.sendKeys(email);
 		pwdTxtBox.sendKeys(pwd);
+		nameTxtBox.clear();
 		nameTxtBox.sendKeys(name);
 		tNCCheckbox.click();
 		regUserBtn.click();		

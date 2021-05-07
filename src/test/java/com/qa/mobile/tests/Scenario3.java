@@ -1,19 +1,22 @@
 package com.qa.mobile.tests;
 
+import java.net.MalformedURLException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.pages.mobile.ChromeBrowserPage;
-import com.qa.pages.mobile.HomePage;
 
 public class Scenario3 extends TestBase {
 
-	ChromeBrowserPage chromePage = new ChromeBrowserPage(driver);
+	ChromeBrowserPage chromePage;
 
 	@BeforeTest
-	public void initialise() {
+	public void initialise() throws MalformedURLException {
+		System.out.println("Running scenario-3");
+		init();
 		chromePage = new ChromeBrowserPage(driver);
 	}
 
