@@ -22,9 +22,15 @@ public class Scenario9 extends TestBase{
 	public void enterTextInExceptionFieldAndVerifyHomePageTitle() throws MalformedURLException {
 		String text = "test";
 		MobileElement field = driver.findElement(By.id("io.selendroid.testapp:id/exceptionTestField"));
+		try {
 		field.sendKeys(text);
-		driver.closeApp();
-		init();	
+		}
+		catch(Exception e) {
+			//e.printStackTrace();
+			System.out.println("Exception occured when sending a text to the Exception textbox");
+			init();	
+		}
+		//driver.closeApp();		
 		MobileElement title = driver.findElement(By.id("android:id/title"));
 		Assert.assertEquals(title.getText(), "selendroid-test-app");
 	}
