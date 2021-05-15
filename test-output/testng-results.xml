@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite_JQueryUI" duration-ms="58712" started-at="2021-05-08T11:07:12 IST" finished-at="2021-05-08T11:08:10 IST">
+    <groups>
+    </groups>
+    <test name="Test_JQueryUI_Droppable" duration-ms="25156" started-at="2021-05-08T11:07:12 IST" finished-at="2021-05-08T11:07:37 IST">
+      <class name="com.qa.web.tests.Test_JQueryUI_Droppable">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Droppable@371a67ec]" name="setup" is-config="true" duration-ms="19" started-at="2021-05-08T11:07:12 IST" finished-at="2021-05-08T11:07:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openTest(java.lang.String)[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Droppable@371a67ec]" name="openTest" is-config="true" duration-ms="3687" started-at="2021-05-08T11:07:12 IST" finished-at="2021-05-08T11:07:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Droppable@371a67ec]" name="test1" duration-ms="20184" started-at="2021-05-08T11:07:15 IST" finished-at="2021-05-08T11:07:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Droppable@371a67ec]" name="closeTest" is-config="true" duration-ms="696" started-at="2021-05-08T11:07:36 IST" finished-at="2021-05-08T11:07:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Droppable@371a67ec]" name="tearDown" is-config="true" duration-ms="518" started-at="2021-05-08T11:07:36 IST" finished-at="2021-05-08T11:07:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.web.tests.Test_JQueryUI_Droppable -->
+    </test> <!-- Test_JQueryUI_Droppable -->
+    <test name="Test_JQueryUI_Selectable" duration-ms="16147" started-at="2021-05-08T11:07:37 IST" finished-at="2021-05-08T11:07:53 IST">
+      <class name="com.qa.web.tests.Test_JQueryUI_Selectable">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Selectable@32eebfca]" name="setup" is-config="true" duration-ms="1" started-at="2021-05-08T11:07:37 IST" finished-at="2021-05-08T11:07:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openTest(java.lang.String)[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Selectable@32eebfca]" name="openTest" is-config="true" duration-ms="1864" started-at="2021-05-08T11:07:37 IST" finished-at="2021-05-08T11:07:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTest -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Selectable@32eebfca]" name="test2" duration-ms="13562" started-at="2021-05-08T11:07:39 IST" finished-at="2021-05-08T11:07:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Selectable@32eebfca]" name="closeTest" is-config="true" duration-ms="181" started-at="2021-05-08T11:07:52 IST" finished-at="2021-05-08T11:07:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_Selectable@32eebfca]" name="tearDown" is-config="true" duration-ms="534" started-at="2021-05-08T11:07:52 IST" finished-at="2021-05-08T11:07:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.web.tests.Test_JQueryUI_Selectable -->
+    </test> <!-- Test_JQueryUI_Selectable -->
+    <test name="Test_JQueryUI_ControlGroups" duration-ms="17385" started-at="2021-05-08T11:07:53 IST" finished-at="2021-05-08T11:08:10 IST">
+      <class name="com.qa.web.tests.Test_JQueryUI_ControlGroups">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_ControlGroups@7403c468]" name="setup" is-config="true" duration-ms="1" started-at="2021-05-08T11:07:53 IST" finished-at="2021-05-08T11:07:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="openTest(java.lang.String)[pri:0, instance:com.qa.web.tests.Test_JQueryUI_ControlGroups@7403c468]" name="openTest" is-config="true" duration-ms="1888" started-at="2021-05-08T11:07:53 IST" finished-at="2021-05-08T11:07:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_ControlGroups@7403c468]" name="test" duration-ms="14435" started-at="2021-05-08T11:07:55 IST" finished-at="2021-05-08T11:08:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_ControlGroups@7403c468]" name="closeTest" is-config="true" duration-ms="475" started-at="2021-05-08T11:08:09 IST" finished-at="2021-05-08T11:08:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.web.tests.Test_JQueryUI_ControlGroups@7403c468]" name="tearDown" is-config="true" duration-ms="583" started-at="2021-05-08T11:08:10 IST" finished-at="2021-05-08T11:08:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.web.tests.Test_JQueryUI_ControlGroups -->
+    </test> <!-- Test_JQueryUI_ControlGroups -->
+  </suite> <!-- TestSuite_JQueryUI -->
+</testng-results>
